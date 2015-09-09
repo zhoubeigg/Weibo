@@ -1,0 +1,40 @@
+//
+//  ZBWeibo-Prefix.pch
+//  ZBWeibo
+//
+//  Created by macAir on 15/7/29.
+//  Copyright (c) 2015年 ZhouBei. All rights reserved.
+//
+
+#ifndef ZBWeibo_ZBWeibo_Prefix_pch
+#define ZBWeibo_ZBWeibo_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "UIView+Extension.h"
+#import "UIBarButtonItem+Extension.h"
+#import "UIWindow+Extension.h"
+#import "NSDate+Extension.h"
+#import "NSString+Extension.h"
+#import "NSString+Emoji.h"
+#import "UITextView+Extension.h"
+#import "ZWBConst.h"
+
+#ifdef DEBUG //处于开发阶段
+#define ZBLog(...) NSLog(__VA_ARGS__)
+#else //处于发布阶段
+#define ZBLog(...)
+#endif
+
+#define iOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
+
+// 通知中心
+#define ZBWNotificationCenter [NSNotificationCenter defaultCenter]
+
+//RGB颜色
+#define ZBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+//随机色
+#define ZBRandomColor ZBColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+
+#endif
