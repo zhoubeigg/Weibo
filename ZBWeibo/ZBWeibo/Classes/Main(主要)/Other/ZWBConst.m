@@ -10,8 +10,8 @@
 
 // 账号信息
 NSString * const ZBWAppKey = @"258491033";
-NSString * const ZBWRedirectURI = @"7ce2267e38fa8f9aefc51a275e641fe1";
-NSString * const ZBWAppSecret = @"http://www.baidu.com";
+NSString * const ZBWRedirectURI = @"http://www.baidu.com";
+NSString * const ZBWAppSecret = @"7ce2267e38fa8f9aefc51a275e641fe1";
 
 // 通知
 // 表情选中的通知
